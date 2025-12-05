@@ -1,0 +1,180 @@
+<!-- モーダル -->
+<!-- リビングを開始/停止しますか -->
+<div class="modal fade" id="modalRacStart">
+  <div class="modal-dialog" style="width: 318px; height: 100%;">
+    <div class="modal-content rounded-3">
+      <div class="modal-body p-4 text-center">
+        <h5 class="mb-0">おすすめの設定を表示します</h5>
+        <p class="mb-0" style="margin-top: 1.25rem;">エアコンを<span id="modalText"></span>しますか</p>
+      </div>
+      <div class="modal-footer flex-nowrap p-0">
+        <button type="button"
+          class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><strong>キャンセル</strong></button>
+        <button id="modalBtn01" type="button"
+          class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"
+          data-bs-dismiss="modal"><strong>OK</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 運転モードを選択する1 -->
+<div class="modal fade" id="selectDriveMode1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+  tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" style="width: 375px; height: 330px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id=""></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column text-center mx-auto">
+          <div class="row align-items-end">
+            <!-- MyMU -->
+            <div class="col-3 d-flex flex-column align-items-center">
+              <img src="../assets/img/icon-modal-mode-change-1.svg" alt="">
+              <span class="d-block">冷房</span>
+            </div>
+            <!-- 基本機能 -->
+            <div class="col-3 d-flex flex-column align-items-center">
+              <img src="../assets/img/icon-modal-mode-change-2.svg" alt="">
+              <span class="d-block">除湿</span>
+            </div>
+            <!-- スケジュール -->
+            <div class="col-3 d-flex flex-column align-items-center">
+              <img src="../assets/img/icon-modal-mode-change-3.svg" alt="">
+              <span class="d-block">暖房</span>
+            </div>
+            <!-- その他機能 -->
+            <div class="col-3 d-flex flex-column align-items-center">
+              <img src="../assets/img/icon-modal-mode-change-4.svg" alt="">
+              <span class="d-block">送風</span>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-column text-center mx-auto">
+          <div class="row align-items-end">
+            <!-- MyMU -->
+            <div class="col-12 d-flex flex-column align-items-center" role="button" data-bs-toggle="modal"
+              data-bs-target="#selectDriveMode2">
+              <img src="../assets/img/icon-modal-mode-change-5.svg" alt="">
+              <span class="d-block">A.I.自動</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#selectDriveMode2" data-bs-toggle="modal"></button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- 運転モードを選択する2 -->
+<div class="modal fade" id="selectDriveMode2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+  tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered" style="width: 375px; height: 208px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id=""></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row align-items-end">
+          <!-- MyMU -->
+          <div class="col-6 d-flex flex-column align-items-center">
+            <img src="../assets/img/icon-modal-mode-change-5.svg" alt="">
+            <span class="d-block">A.I自動(冷房)</span>
+          </div>
+          <!-- 基本機能 -->
+          <div class="col-6 d-flex flex-column align-items-center">
+            <img src="../assets/img/icon-modal-mode-change-5.svg" alt="">
+            <span class="d-block">A.I自動(除湿)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+          first</button>
+      </div> -->
+  </div>
+</div>
+</div>
+
+<!-- オートメーションを削除しますか？ -->
+<div class="modal fade" tabindex="-1" role="dialog" id="modalXXXXX">
+  <div class="modal-dialog" role="document" style="width: 318px; height: 100%;">
+    <div class="modal-content rounded-3">
+      <div class="modal-body p-4 text-center">
+        <h5 class="mb-0">おすすめの設定を表示します</h5>
+        <p class="mb-0" style="margin-top: 1.25rem;">おすすめの設定内容で表示します。<br />必要に応じて編集してください。</p>
+      </div>
+      <div class="modal-footer flex-nowrap p-0 text-center">
+        <button id="sample" type="button"
+          class="btn btn-lg btn-link fs-6 text-decoration-none col-12 py-3 m-0 rounded-0 border-end"><strong>閉じる</strong></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 風速設定 -->
+<div class="modal fade" id="selectWindspeed" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center">
+          <img src="../assets/img/modal-component-windspeed.svg" alt="">
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#selectDriveMode2" data-bs-toggle="modal"></button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- 上下風向設定 -->
+<div class="modal fade" id="selectWinddirectionUpDown" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center">
+          <img src="../assets/img/modal-component-winddirection-updown.svg" alt="">
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#selectDriveMode2" data-bs-toggle="modal"></button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- 左右風向設定 -->
+<div class="modal fade" id="selectWinddirectionLeftRight" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center">
+          <img src="../assets/img/modal-component-winddirection-leftright.svg" alt="">
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#selectDriveMode2" data-bs-toggle="modal"></button>
+      </div> -->
+    </div>
+  </div>
+</div>
